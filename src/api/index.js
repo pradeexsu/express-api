@@ -22,7 +22,7 @@ router.get('/verify-mobile-number', (req, res) => {
 
 router.get('/get-otp', (req, res) => {
   
-  let otp = (Math.random()*10000).toString().substring(0,4)
+  let otp = (Math.random()*1000000).toString().substring(0,4)
   
   res.json({
     message: 'opt-genrated successfully',
